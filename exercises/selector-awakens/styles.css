@@ -14,7 +14,7 @@ p {
   line-height: 25px;
 }
 
-.credits {
+p > .credits {
   text-decoration: underline;
   color: #49DAFF;
 }
