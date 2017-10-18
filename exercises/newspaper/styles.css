@@ -30,6 +30,16 @@ p {
   line-height: 150%;
 }
 
+.news-post {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.news-post .animated {
+  opacity: 1;
+}
+
 .page-banner {
   background-image: url("newspaper-bg.jpg");
   background-size: cover;
