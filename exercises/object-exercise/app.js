@@ -19,7 +19,7 @@ var students = [
   },
   {
     name: "Derek",
-    age: 24,
+    age: "Uknown",
     array: [],
     passing: true
   },
