@@ -52,6 +52,7 @@ p {
   max-width: 960px;
   margin: 0 auto;
   font-family: "Helvetica Neue Light";
+  padding: 35px;
 }
 
 .post-copy {
