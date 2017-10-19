@@ -42,24 +42,24 @@
 //
 // console.log(fruitTwo);
 
-var peopleArray = [
-  {
-    name: "Harrison Ford",
-    occupation: "Actor"
-  },
-  {
-    name: "Justin Beiber",
-    occupation: "Singer"
-  },
-  {
-    name: "Vladmir Putin",
-    occupation: "Politition"
-  },
-  {
-    name: "Oprah",
-    occupation: "Entertainer"
-  }
-];
+// var peopleArray = [
+//   {
+//     name: "Harrison Ford",
+//     occupation: "Actor"
+//   },
+//   {
+//     name: "Justin Beiber",
+//     occupation: "Singer"
+//   },
+//   {
+//     name: "Vladmir Putin",
+//     occupation: "Politition"
+//   },
+//   {
+//     name: "Oprah",
+//     occupation: "Entertainer"
+//   }
+// ];
 //
 // for (var i = 0; i < peopleArray.length; i++) {
 //   console.log(peopleArray[i].name);
@@ -90,18 +90,12 @@ var peopleArray = [
 // console.log(everyOther);
 // console.log(everyOtherOccupation);
 
-var rows = [];
-var columns = [];
+var matrix = [];
 
-for (var row = 0; row < 3; row++) {
-  rows.push('x');
-  for (var column = 0; column < 3; column++) {
-    columns.push('x');
+for (var i = 0; i < 3; i++) {
+  matrix[i] = [];
+  for (var j = 0; j < 3; j++) {
+    matrix[i][j] = 0;
   }
 }
-
-console.log('rows: ' + rows);
-console.log('columns: ' + columns);
-
-
-// console.log(rows);
+console.log(matrix);
