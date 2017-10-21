@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+/* French flag */
+
+#french {
+  width: 700px;
+  height: 400px;
+}
+
+.box-french {
+  height: 100%;
+  width: calc(100% / 3);
+  display: inline-block;
+}
+
+/* German Flag */
+
+#germany {
+  width: 700px;
+  height: 400px;
+  background-color: #eee;
+}
+
+.box-german {
+  height: calc(100% / 3);
+}
+
+/* Madagascar */
+
+#madagascar {
+  width: 700px;
+  height: 400px;
+  background-color: #eee;
+}
+
+.tallbox {
+  width: 30%;
+  height: 100%;
+  float: left;
+  background-color: white;
+}
+
+.tinybox {
+  width: 70%;
+  height: 50%;
+  float: left;
+}
+
+/* Switzerland */
+
+#switzerland {
+  width: 700px;
+  height: 700px;
+  background-color: red;
+  position: relative;
+}
+
+.tall {
+  background-color: white;
+  position: absolute;
+  height: 500px;
+  width: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wide {
+  background-color: white;
+  position: absolute;
+  height: 150px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Sweden */
+
+#sweden {
+  width: 700px;
+  height: 400px;
+  background-color: #006aa7;
+  position: relative;
+}
+
+.box-sweden {
+  width: 100%;
+  position: absolute;
+}
+
+.y-sweden {
+  height: 80px;
+  background-color: #fecc00;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.x-sweden {
+  height: 100%;
+  width: 80px;
+  background-color: #fecc00;
+  left: 30%;
+  transform: translate(-30%, 0);
+}
+
+/* Gambia */
+
+#gambia {
+  width: 700px;
+  height: 400px;
+  background-color: #eee;
+}
+
+.box-gambia {
+  height: 35%;
+}
+
+.middle-gambia {
+  height: 20%;
+}
+
+.small-gambia {
+  height: 5%;
+}
+
+/* Tonga */
+
+#tonga {
+  width: 700px;
+  height: 400px;
+  background-color: #c10000;
+  position: relative;
+}
+
+.top-right {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 7px;
+  left: 7px;
+  background-color: white;
+}
+
+.tall-gambia {
+  height: 130px;
+  width: 40px;
+  background-color: #c10000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wide-gambia {
+  height: 40px;
+  width: 130px;
+  background-color: #c10000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Japan */
+
+#japan {
+  width: 700px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.circle-japan {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #bc002d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Greece */
+
+#greece {
+  width: 700px;
+  height: 400px;
+  background-color: #eee;
+  position: relative;
+}
+
+.inner-box {
+  width: 222px;
+  height: 222px;
+  position: absolute;
+  background-color: #0d5eaf;
+}
+
+.greece-tall {
+  height: 100%;
+  width: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: white;
+  position: absolute;
+}
+
+.greece-wide {
+  height: 40px;
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: white;
+  position: absolute;
+}
+
+.gflag-box {
+  height: calc(100% / 9);
+  width: 100%;
+}
+
+/* Niger */
+
+#niger {
+  width: 700px;
+  height: 400px;
+  background-color: #eee;
+}
+
+.niger-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.niger-box {
+  height: calc(100% / 3);
+}
+
+/* Maldives */
+
+#maldives {
+  width: 700px;
+  height: 400px;
+  background-color: #d21034;
+  position: relative;
+}
+
+.mal-box1 {
+  width: 500px;
+  height: 250px;
+  background-color: #007e3a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.big-circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.small-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #007e3a;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-55%, -50%);
+}

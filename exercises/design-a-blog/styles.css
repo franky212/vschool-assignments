@@ -1,0 +1,144 @@
+/***************************
+
+GENERAL STYLES
+
+***************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+p {
+  line-height: 150%;
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.main-container {
+  margin-top: 50px;
+  font-weight: 300;
+}
+
+small {
+  color: #BEBEBE;
+}
+
+/***************************
+
+HEADER STYLES
+
+***************************/
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #176664;
+  color: white;
+  padding: 25px;
+  z-index: 9999;
+}
+
+.logo {
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  margin: 0;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: #6CFFFA;
+}
+
+.main-nav {
+  list-style: none;
+  vertical-align: middle;
+  margin-top: 10px;
+  float: right;
+}
+
+.main-nav li {
+  display: inline-block;
+  padding-right: 25px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.main-nav li:hover {
+  color: #6CFFFA;
+}
+
+/***************************
+
+BANNER STYLES
+
+***************************/
+
+.banner {
+  height: 90vh;
+  max-width: 100%;
+  margin-top: 90px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("design-blog-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  /*border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;*/
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4em;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+/***************************
+
+MAIN CONTENT STYLES
+
+***************************/
+
+.post {
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: #176664;
+  transition: .2s;
+  margin-top: 50px;
+}
+
+h3:hover {
+  color: #6CFFFA;
+}
+
+img {
+  padding: 0 10px 0 0;
+}
+
+.blog-img {
+  max-width: 300px;
+  height: auto;
+  float: left;
+}
