@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mario Pest Control</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mario Pest Control</h1>
+
+    <div class="goomba-info">
+      <img class="baddie-img" src="img/goomba.png" />
+      <p class="price">Price: 5 Coins</p>
+      <input type="text" id="goomba" class="amountCaught" placeholder="How many caught?" />
+      <!-- <button class="submit-btn" id="goomba-btn" onclick="goomba()">Submit</button> -->
+    </div>
+
+    <p class="separator"></p>
+
+    <div class="bob-omb-info">
+      <img class="baddie-img" src="img/bob-omb.png" />
+      <p class="price">Price: 7 Coins</p>
+      <input type="text" id="bob-omb" class="amountCaught" placeholder="How many caught?" />
+      <!-- <button class="submit-btn" id="bob-omb-btn" onclick="bobOmb()">Submit</button> -->
+    </div>
+
+    <p class="separator"></p>
+
+    <div class="cheep-cheep-info">
+      <img class="baddie-img" src="img/cheep-cheep.png" />
+      <p class="price">Price: 11 Coins</p>
+      <input type="text" id="cheep-cheep" class="amountCaught" placeholder="How many caught?" />
+      <!-- <button class="submit-btn" id="cheep-cheep-btn" onclick="cheepCheep()">Submit</button> -->
+    </div>
+
+    <p class="separator"></p>
+
+    <button onclick="sum()" class="submit-btn">Submit</button>
+
+    <h1 class="totalPrice">Total Price:</h1>
+    <h2 id="sum"></h2>
+
+    <footer>
+      
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
