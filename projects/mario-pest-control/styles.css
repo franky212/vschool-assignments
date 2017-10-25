@@ -21,10 +21,6 @@ body {
   font-size: 18px;
 }
 
-.container {
-  width: 100%;
-}
-
 h1 {
   font-family: "Bebas Neue";
   text-align: center;
@@ -47,6 +43,7 @@ header {
   padding: 10px;
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 
 .top-filler {
@@ -158,11 +155,6 @@ footer a:visited {
 /* SMALL PHONES TO SMALL TABLETS: FROM 767px */
 @media only screen and (min-width: 767px) {
 
-  .container {
-    max-width: 1024px;
-    margin: 0 auto;
-  }
-
   .submit-btn {
     padding: 20px;
     font-size: 1.5em;
@@ -186,19 +178,15 @@ footer a:visited {
     font-size: 1em;
   }
 
-  .separator {
-    display: none;
-  }
-
-  .container > div {
-    display: inline-block;
-    width: 33%;
-    vertical-align: top;
-    padding: 0;
-  }
-
   .footer-list li {
     display: inline-block;
     font-size: 1em;
+  }
+}
+
+/* SMALL PHONES FROM 0 TO 480px */
+@media only screen and (max-width: 480px) {
+  header > h1 {
+    font-size: 3em;
   }
 }

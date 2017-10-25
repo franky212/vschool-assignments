@@ -7,51 +7,61 @@
   <title>Mario Pest Control</title>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
-
-  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Mario Pest Control</h1>
-  </header>
+
+  <div class="container-fluid">
+    <div class="container">
+      <header>
+        <h1>Mario Pest Control</h1>
+      </header>
+    </div>
+  </div>
 
   <div class="top-filler"></div>
 
   <div class="container">
-
-    <div class="goomba-info">
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
       <h3 class="baddie-name">Goomba</h3>
       <img class="baddie-img" src="img/goomba.png" />
       <p class="price">Price: 5 Coins</p>
       <input type="text" id="goomba" class="amountCaught" placeholder="How many caught?" />
+      <p class="separator hidden-md hidden-lg"></p>
     </div>
 
-    <p class="separator"></p>
-
-    <div class="bob-omb-info">
+    <div class="col-sm-12 col-md-4">
       <h3 class="baddie-name">Bob-omb</h3>
       <img class="baddie-img" src="img/bob-omb.png" />
       <p class="price">Price: 7 Coins</p>
       <input type="text" id="bob-omb" class="amountCaught" placeholder="How many caught?" />
+      <p class="separator hidden-md hidden-lg"></p>
     </div>
 
-    <p class="separator"></p>
-
-    <div class="cheep-cheep-info">
+    <div class="col-sm-12 col-md-4">
       <h3 class="baddie-name">Cheep Cheep</h3>
       <img class="baddie-img" src="img/cheep-cheep.png" />
       <p class="price">Price: 11 Coins</p>
       <input type="text" id="cheep-cheep" class="amountCaught" placeholder="How many caught?" />
+      <p class="separator hidden-md hidden-lg"></p>
     </div>
 
-    <p class="separator"></p>
+    <div class="row">
+      <div class="col-xs-12 hidden-sm">
+        <p class="separator-desktop"></p>
+      </div>
+    </div>
 
-    <p class="separator-desktop"></p>
-
-    <button onclick="sum()" class="submit-btn">Submit</button>
-    <h1 id="totalPrice"></h1>
+    <div class="row">
+      <div class="col-xs-12">
+        <button id="mario-submit" class="submit-btn">Submit</button>
+        <h1 id="totalPrice"></h1>
+      </div>
+    </div>
   </div>
+</div>
 
   <footer>
     <div class="container">
