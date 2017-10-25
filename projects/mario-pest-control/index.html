@@ -12,45 +12,56 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Mario Pest Control</h1>
+  </header>
+
+  <div class="top-filler"></div>
+
+  <div class="container">
 
     <div class="goomba-info">
+      <h3 class="baddie-name">Goomba</h3>
       <img class="baddie-img" src="img/goomba.png" />
       <p class="price">Price: 5 Coins</p>
       <input type="text" id="goomba" class="amountCaught" placeholder="How many caught?" />
-      <!-- <button class="submit-btn" id="goomba-btn" onclick="goomba()">Submit</button> -->
     </div>
 
     <p class="separator"></p>
 
     <div class="bob-omb-info">
+      <h3 class="baddie-name">Bob-omb</h3>
       <img class="baddie-img" src="img/bob-omb.png" />
       <p class="price">Price: 7 Coins</p>
       <input type="text" id="bob-omb" class="amountCaught" placeholder="How many caught?" />
-      <!-- <button class="submit-btn" id="bob-omb-btn" onclick="bobOmb()">Submit</button> -->
     </div>
 
     <p class="separator"></p>
 
     <div class="cheep-cheep-info">
+      <h3 class="baddie-name">Cheep Cheep</h3>
       <img class="baddie-img" src="img/cheep-cheep.png" />
       <p class="price">Price: 11 Coins</p>
       <input type="text" id="cheep-cheep" class="amountCaught" placeholder="How many caught?" />
-      <!-- <button class="submit-btn" id="cheep-cheep-btn" onclick="cheepCheep()">Submit</button> -->
     </div>
 
     <p class="separator"></p>
 
+    <p class="separator-desktop"></p>
+
     <button onclick="sum()" class="submit-btn">Submit</button>
-
-    <h1 class="totalPrice">Total Price:</h1>
-    <h2 id="sum"></h2>
-
-    <footer>
-      
-    </footer>
+    <h1 id="totalPrice"></h1>
   </div>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-list">
+        <li><a href="#">mario@nintendo.com</a></li>
+        <li>4600 150th Ave NE. Redmond, WA 98052</li>
+        <li><a href="https://www.nintendo.com/">https://www.nintendo.com/</a></li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>

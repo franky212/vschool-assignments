@@ -1,0 +1,21 @@
+#franks-carousel {
+  margin-top: 94px;
+}
+
+.navbar-dark {
+  padding: 25px;
+  font-size: 1.2em;
+}
+
+.navbar-brand {
+  font-size: 1.2em;
+}
+
+.carousel-inner {
+  height: 650px;
+}
+
+h1 {
+  text-align: center;
+  margin: 60px;
+}

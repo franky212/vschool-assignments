@@ -11,5 +11,5 @@ function sum() {
   bobOmbCaught *= 7;
   cheepCheepCaught *= 11;
 
-  document.getElementById("sum").innerText = goombasCaught + bobOmbCaught + cheepCheepCaught + " Coins";
+  document.getElementById("totalPrice").innerText = "Total Price: " + (goombasCaught + bobOmbCaught + cheepCheepCaught) + " Coins";
 }
