@@ -1,0 +1,52 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .2s;
+}
+
+a:hover {
+  color: teal;
+  font-size: 1.1em;
+}
+
+table {
+  font-family:  Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #eee;
+  text-align: left;
+  padding: 8px;
+}
+
+.td-center {
+  text-align: center;
+}
+
+th {
+  background: teal;
+  color: #fff;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tfoot {
+  background-color: teal;
+  color: #fff;
+}
+
+tfoot td {
+  text-align: center;
+}
