@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), #000), url("endoftheworld.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.center-timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 6em;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+}
