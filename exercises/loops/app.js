@@ -16,6 +16,8 @@ function tellMe(str, a) {
   }
 }
 
+console.log(tellMe("Frank", "f"));
+
 function found(arr) {
   for(var i = 0; i < arr.length; i++) {
     if (arr[i] === 42) {
@@ -35,5 +37,3 @@ function smallest(arr) {
   }
   return smallTemp;
 }
-
-console.log(smallest([3, 4, 5, 25, 56, 534]));

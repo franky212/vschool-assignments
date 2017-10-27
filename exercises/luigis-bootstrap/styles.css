@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Mario 256";
+  src: url("SuperMario256.ttf");
+}
+
+.yellow-background {
+  background-color: #ffda09;
+}
+
+#header1 {
+  font-family: "Mario 256", Arial;
+  text-transform: uppercase;
+  color: #eb1f22;
+  font-size: 4em;
+}
+
+#header2 {
+  font-family: "Mario 256", Arial;
+  text-transform: uppercase;
+  color: #eb1f22;
+  font-size: 3em;
+}
+
+.section1 {
+  text-align: center;
+  padding: 25px;
+}
+
+.copy {
+  font-family: sans-serif;
+  font-size: 2.2em;
+  color: #eb1f22;
+  max-width: 500px;
+  margin: 25px auto 0 auto;
+  font-weight: 900;
+}
+
+.luigi {
+  display: block;
+  margin: 0 auto;
+}
+
+#mushroom {
+  max-width: 100px;
+  margin: 10px;
+  float: right;
+}
+
+.red-background {
+  background-color: #eb1f22;
+  padding: 25px;
+}
+
+@media (max-width: 480px) {
+  #header1 {
+    text-align: center;
+  }
+}

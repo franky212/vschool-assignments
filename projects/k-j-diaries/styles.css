@@ -1,0 +1,64 @@
+.navLinks {
+  margin-top: 10px;
+}
+
+.myNav {
+  background-color: #fff;
+  margin: 0;
+}
+
+.nav-margin > li {
+  margin-right: 50px;
+}
+
+.dropdown .open {
+  background-color: pink;
+}
+
+.myNav a {
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.sub-menu-items li a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 25px;
+}
+
+.sub-menu-items li a:hover {
+  background-color: pink;
+}
+
+.search {
+  margin-top: 10px;
+}
+
+.myCarousel {
+  max-height: 665px;
+}
+
+.email-row {
+  padding: 25px;
+  background-color: rgba(252, 202, 178, 0.56);
+}
+
+#email {
+  padding: 5px;
+}
+
+#email-button {
+  padding: 5px;
+}
+
+#email::placeholder {
+  text-transform: uppercase;
+}
+
+#brand {
+  margin: 13px;
+}
