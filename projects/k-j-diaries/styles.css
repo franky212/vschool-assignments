@@ -1,3 +1,15 @@
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
 .navLinks {
   margin-top: 10px;
 }
@@ -45,6 +57,129 @@
 .email-row {
   padding: 25px;
   background-color: rgba(252, 202, 178, 0.56);
+}
+
+.content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 1.5em;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  margin: 24px 0 19px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+h2::before {
+  content: " ";
+  display: inline-block;
+  max-width: 80px;
+  width: 15%;
+  border-bottom: 1px solid #ddd;
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+h2::after {
+  content: " ";
+  display: inline-block;
+  max-width: 80px;
+  width: 15%;
+  border-bottom: 1px solid #ddd;
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+h1 + p {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.page-img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.image-copy {
+  text-align: left;
+  margin: 20px 0 20px 0;
+  font-weight: 300;
+}
+
+.content-button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: transparent;
+  color: #ccc;
+  border: 1px solid #ccc;
+  transition: .2s;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.content-button:hover {
+  background-color: #aaa;
+  color: #fff;
+  border: none;
+}
+
+.social {
+  font-size: 2.5em;
+  color: rgba(252, 202, 178, 0.56);
+  padding: 5px;
+  margin: 25px;
+}
+
+.social-left {
+  position: absolute;
+  left: 0;
+}
+
+.social-right {
+  position: absolute;
+  right: 0;
+  margin-top: 40px;
+}
+
+i {
+  cursor: pointer;
+}
+
+.social-hover {
+  cursor: pointer;
+  transition: .2s;
+}
+
+.social-hover:hover {
+  color: rgba(252, 202, 178, 0.56);
+}
+
+h3 {
+  display: block;
+  color: #000;
+  background-color: #fff;
+  margin: 100px auto -9px;
+  font-size: 16px;
+  padding: 0 5px;
+  width: 85px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.footer-pics {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px;
 }
 
 #email {
