@@ -1,0 +1,84 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin: 20px auto;
+}
+
+audio {
+  display: block;
+  margin: 30px auto;
+  width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #000;
+}
+
+audio::-webkit-media-controls-play-button {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  color: green;
+}
+
+#box1 {
+  transition: background-color, border, 1s, ease-in;
+}
+
+#box1:hover {
+  background-color: #fff;
+  border: 1px dotted #000;
+}
+
+#box2 {
+  transition: border-radius, box-shadow, 1s, ease-in-out;
+}
+
+#box2:hover {
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  box-shadow: 10px 10px 10px #eee;
+}
+
+#box3 {
+  transition: height, width, box-shadow, 1s, ease-out;
+}
+
+#box3:hover {
+  height: 250px;
+  width: 250px;
+  box-shadow: 10px 10px 10px #eee;
+}
+
+#box4 {
+  opacity: 0;
+  transition: opacity, margin, 1s, ease-in;
+}
+
+#box4:hover {
+  opacity: 1;
+  margin: 60px auto;
+}
+
+#box5 {
+  transition: position, background-color, 1s, ease-in-out;
+}
+
+#box5:hover {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: teal;
+}
+
+#box6 {
+  transition: border, margin, padding, 1s, ease-in-out;
+}
+
+#box6:hover {
+  border: 20px dotted teal;
+  margin: 60px auto;
+  padding: 50px;
+}
