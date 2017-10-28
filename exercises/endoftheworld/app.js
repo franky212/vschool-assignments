@@ -1,4 +1,4 @@
-var secondsLeft = 20;
+var secondsLeft = 3;
 
 var text = document.getElementById("timer");
 
