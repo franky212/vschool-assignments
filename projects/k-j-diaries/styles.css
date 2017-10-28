@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .group:before,
 .group:after {
   content: "";
@@ -59,18 +65,76 @@
   background-color: rgba(252, 202, 178, 0.56);
 }
 
+.aside {
+  margin-top: 100px;
+}
+
 .content {
   text-align: center;
   margin-top: 50px;
 }
 
+.aside-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 35px;
+}
+
+.aside-box ul {
+  list-style: none;
+}
+
+.aside-box ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+#aside-h3 {
+  margin-top: -25px;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.wishlist .left
+.wishlist .right  {
+  height: 100%;
+  cursor: pointer;
+  transition: background-color, color .2s ease-in-out;
+}
+
+.brand-imgs img {
+  display: block;
+  max-width: 100%;
+}
+
+.wishlist .left:hover,
+.wishlist .right:hover {
+  background-color: #000;
+  color: #ccc;
+}
+
+.aside select {
+  width: 100%;
+  padding: 10px;
+  height: 35px;
+  background-color: transparent;
+  border-radius: none;
+  border: 2px solid #eee;
+}
+
 h1 {
   font-size: 1.5em;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   margin: 24px 0 19px;
   font-family: sans-serif;
   font-weight: 600;
+  cursor: pointer;
+  transition: color .2s ease-in-out;
+}
+
+h1:hover {
+  color: rgba(252, 202, 178, 0.56);
 }
 
 h2::before {
@@ -87,6 +151,7 @@ h2 {
   font-size: 12px;
   font-weight: 200;
   text-transform: uppercase;
+  margin-top: 100px;
 }
 
 h2::after {
@@ -142,13 +207,11 @@ h1 + p {
 }
 
 .social-left {
-  position: absolute;
-  left: 0;
+  float: left;
 }
 
 .social-right {
-  position: absolute;
-  right: 0;
+  float: right;
   margin-top: 40px;
 }
 
@@ -169,7 +232,7 @@ h3 {
   display: block;
   color: #000;
   background-color: #fff;
-  margin: 100px auto -9px;
+  margin: 0 auto -9px;
   font-size: 16px;
   padding: 0 5px;
   width: 85px;
@@ -178,9 +241,13 @@ h3 {
 }
 
 .footer-pics {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
   padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.footer-box {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
 }
 
 #email {
