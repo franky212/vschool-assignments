@@ -250,6 +250,51 @@ h3 {
   padding: 15px 0;
 }
 
+.instagram {
+  margin-top: 30px;
+}
+
+.instagram h3 {
+  width: 200px;
+  font-weight: 200;
+}
+
+.insta-container {
+  margin-top: 35px;
+  text-align: left;
+}
+
+#insta-name {
+  font-style: italic;
+  font-size: 16px;
+}
+
+#insta-bio {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.insta-container img {
+  float: left;
+  border-radius: 50%;
+  width: 5%;
+  height: auto;
+  margin: 0 10px 10px 0;
+}
+
+.insta-img {
+  width: 10%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background-image: url("smallimg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 #email {
   padding: 5px;
 }
