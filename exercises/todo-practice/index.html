@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo List</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <form id="form" action="">
+          <input id="title" placeholder="Title">
+          <input id="price" placeholder="Price">
+          <textarea id="description" placeholder="To Do Description"></textarea>
+          <button type="button" id="submit">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div id="todo-items">
+
+        </div>
+      </div>
+      </row>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
