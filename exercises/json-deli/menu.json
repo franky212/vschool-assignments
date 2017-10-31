@@ -1,0 +1,47 @@
+{
+  "appetizers": [
+    {
+      "item": "Fries",
+      "ingredients": ["Potatos", "Seasonings", "Fry tf out of 'em."],
+      "description": "A basic delicacy"
+    },
+    {
+      "item": "Tator Tots",
+      "ingredients": ["Potatos", "I have no idea", "I can't even cook eggs"],
+      "description": "They're Tator Tots."
+    },
+    {
+      "name": "Bacon and Cheese Fries",
+      "ingredients": ["Bacon", "Cheese", "Fries"],
+      "description": "Fries with Bacon and Cheese on them. What more do you want."
+    }],
+    "cold_sandwiches": [
+      {
+        "name": "Chicken Waldorf",
+        "ingredients": ["Chicken", "Tart Apples", "Celery, and Walnuts"],
+        "description": "You'll love the combination of satisfying chicken combined with tart apples, crunchy celery and walnuts and sweet dried cranberries in a tangy, homemade mayonnaise-mustard dressing."
+      },
+      {
+        "name": "Salami, Mozzarella, and Roasted Red Pepper",
+        "ingredients": ["Fresh Mozzarella", "Salami", "Roasted Peppers", "Basil Leaves", "Olive Oil"],
+        "description": "This easy, scrumptious Italian sandwich is made with fresh mozzarella, zesty salami, sweet roasted red peppers, vibrant basil leaves and rich, buttery olive oil."
+      }
+    ],
+    "hot_sandwiches": [
+      {
+        "name": "Reuben",
+        "ingredients": ["Corned Beef", "Swiss Cheese", "Sauerkraut"],
+        "description": "The Reuben sandwich is an American hot sandwich composed of corned beef, Swiss cheese, sauerkraut, and Russian dressing, grilled between slices of rye bread."
+      },
+      {
+        "name": "Grilled Cheese",
+        "ingredients": ["Cheese", "Bread"],
+        "description": "A cheese sandwich is a basic sandwich generally made with one or more varieties of cheese on any sort of bread, such as flat bread or wheat bread, that may include spreads such as butter or mayonnaise."
+      }
+    ],
+    "desserts": [
+      {
+
+      }
+    ]
+}
