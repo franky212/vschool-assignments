@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: yellow;
+  line-height: 150%;
+}
+
+html,
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  cursor: pointer;
+  display: block;
+}
+
+.info {
+  border: 3px solid #fff;
+  width: 300px;
+  margin: 300px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+}
+
+.background1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("lukeistrash.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: -500;
+}
