@@ -8,6 +8,8 @@ console.log("YOU must stop this alternate dimension from leaking into your world
 
 const name = ask.question("What is your name: ");
 
+let player = new Player(name, ["Walkie Talkie"]);
+
 function Player(name, inventory) {
   this.name = name;
   this.hp = 100;
@@ -17,13 +19,13 @@ function Player(name, inventory) {
     this.damage *= 2;
     this.hp *= 0.5;
   }
-}
+};
 
 const boss = {
   name: "Mind Flayer",
   hp: 200,
   damage() {
-    return Math.floor(Math.random() * 50)
+    return Math.floor(Math.random() * 50);
   }
 };
 
@@ -51,44 +53,71 @@ const enemies = [
   }
 ];
 
-let player = new Player(name, ["Walkie Talkie"]);
+const walk = () => {
+  while(player.health > 0) {
+    let input = ask.question("\nEnter a 'w' to walk forward, or 'print' to see your status: ");
+    if(input.toLowerCase() === 'w') {
+      if(Math.random() <= 0.33) {
+        fight();
+      } else if (Math.random() <= 0.15) {
+        bossAttack();
+      } else {
+        console.log("You Walk!");
+      }
+    } else if(input.toLowerCase() === "print") {
+      console.log(`\nName: ${player.name}`);
+      console.log(`Health Points: ${player.hp}`);
+      console.log("Inventory: ");
+      console.log(player.inventory);
+      console.log("\n");
+    } else {
+      console.log("\nPlease enter a 'w' to move forward!\n");
+    }
+  }
+}
 
-const enemyAttack = () => {
+walk();
+
+const run = () => {
+  return Math.random() >= 0.5;
+}
+
+const fight = () => {
   const choiceArr = ["Fight", "Run"];
   let enemy = enemies[Math.floor(Math.random() * enemies.length)].name;
   let input = ask.keyInSelect(choiceArr, `Oh no a ${enemy} appeared! What's your choice: `);
-  if(input === 0) {
-    console.log("You Fought!");
+  if(input === -1) {
+    console.log("You Canceled? NAH. Coward.");
   } else {
-    console.log("You Ran!");
+    if(run()) {
+      console.log("\nYou escaped!");
+      // ??? How to escape
+    } else {
+      console.log("You could not get away!");
+    }
+  }
+  while(enemy.health > 0) {
+    attackEnemy(enemy);
+    enemyAttack(enemy);
   }
 }
+
+const attackEnemy = (currentEnemy) => {
+  return currentEnemy.hp -= player.damage;
+}
+
+const enemyAttack = (currentEnemy) => {
+  return player.hp -= currentEnemy.damage();
+};
 
 const bossAttack = () => {
   console.log(boss.name);
 }
 
-let tempFlag = 0;
+const die = () => {
 
-// While player is not dead
-while(tempFlag < 5) {
-  let input = ask.question("\nEnter a 'w' to walk forward, or 'print' to see your status: ");
-  if(input.toLowerCase() === 'w') {
-    if(Math.random() <= 0.33) {
-      enemyAttack();
-    } else if (Math.random() <= 0.15) {
-      bossAttack();
-    } else {
-      console.log("You Walk!");
-    }
-    tempFlag++;
-  } else if(input.toLowerCase() === "print") {
-    console.log(`\nName: ${player.name}`);
-    console.log(`Health Points: ${player.hp}`);
-    console.log("Inventory: ");
-    console.log(player.inventory);
-    console.log("\n");
-  } else {
-    console.log("\nPlease enter a 'w' to move forward!\n");
-  }
-};
+}
+
+const enemyDie = () => {
+
+}
