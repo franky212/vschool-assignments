@@ -48,14 +48,14 @@ const enemies = [
     name: "Steve Harrington",
     hp: 1,
     damage() {
-      return "I'm just a douche. Kill me";
+      return Math.floor(Math.random() * 0.5);
     }
   }
 ];
 
 const walk = () => {
-  while(player.health > 0) {
-    let input = ask.question("\nEnter a 'w' to walk forward, or 'print' to see your status: ");
+  while(player.hp > 0) {
+    let input = ask.question("Enter a 'w' to walk forward, or 'print' to see your status: ");
     if(input.toLowerCase() === 'w') {
       if(Math.random() <= 0.33) {
         fight();
@@ -70,13 +70,9 @@ const walk = () => {
       console.log("Inventory: ");
       console.log(player.inventory);
       console.log("\n");
-    } else {
-      console.log("\nPlease enter a 'w' to move forward!\n");
     }
   }
 }
-
-walk();
 
 const run = () => {
   return Math.random() >= 0.5;
@@ -84,31 +80,37 @@ const run = () => {
 
 const fight = () => {
   const choiceArr = ["Fight", "Run"];
-  let enemy = enemies[Math.floor(Math.random() * enemies.length)].name;
-  let input = ask.keyInSelect(choiceArr, `Oh no a ${enemy} appeared! What's your choice: `);
-  if(input === -1) {
-    console.log("You Canceled? NAH. Coward.");
-  } else {
-    if(run()) {
-      console.log("\nYou escaped!");
-      // ??? How to escape
-    } else {
-      console.log("You could not get away!");
+  let enemy = enemies[Math.floor(Math.random() * enemies.length)];
+  let input = ask.keyInSelect(choiceArr, `Oh no a ${enemy.name} appeared! What's your choice: `);
+  if(input === 0) {
+    while(enemy.hp > 0) {
+      console.log("You attacked the enemy for: " + attackEnemy(enemy));
+      console.log("Enemy Health: " + enemy.hp);
+      console.log("The enemy attacked you for: " + enemyAttack(enemy));
+      console.log("Your Health: " +  player.hp);
     }
-  }
-  while(enemy.health > 0) {
-    attackEnemy(enemy);
-    enemyAttack(enemy);
+  } else if(input === 1) {
+    if(run()) {
+      console.log("You Ran");
+      // HOW TO LET THEM ESCAPE
+    } else {
+      console.log("You couldn't get away COWARD!");
+    }
+  } else {
+    console.log("There's no breaks on the Stranger train.");
   }
 }
 
 const attackEnemy = (currentEnemy) => {
-  return currentEnemy.hp -= player.damage;
+  currentEnemy.hp -= player.damage;
+  return player.damage;
 }
 
 const enemyAttack = (currentEnemy) => {
-  return player.hp -= currentEnemy.damage();
-};
+  let enemyDamage = currentEnemy.damage();
+  player.hp -= enemyDamage;
+  return enemyDamage;
+}
 
 const bossAttack = () => {
   console.log(boss.name);
@@ -121,3 +123,5 @@ const die = () => {
 const enemyDie = () => {
 
 }
+
+walk();
