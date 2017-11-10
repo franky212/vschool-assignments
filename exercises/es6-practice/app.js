@@ -44,13 +44,11 @@ const realAnimals = ["dog", "cat", "mouse"];
 const magicalAnimals = ["jackolope"];
 const mysteriousAnimals = ["platypus"];
 
-combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals);
+combineAnimals(...realAnimals, ...magicalAnimals, ...mysteriousAnimals);
 
 // ["dog", "cat", "mouse", "jackolope", "platypus"]
 
-const product = (a, b, c, d, e) => {
-  let numbers = [a,b,c,d,e];
-
+const product = (...numbers) => {
   return numbers.reduce((acc, number) => {
     return acc * number;
   }, 1);
@@ -58,14 +56,30 @@ const product = (a, b, c, d, e) => {
 
 console.log(product(1, 2, 3, 4, 5));
 
-const unshift = (array, a, b, c, d, e) => {
-  return [a, b, c, d, e].concat(array);
+const unshift = (array, ...arr2) => {
+  return [...arr2, ...array];
 }
+
+console.log(unshift([1, 2, 3, 4], 1, 2, 3, 4, 5, 6));
 
 const populatePeople = names => {
   return names.map(name => {
     name = name.split(" ");
-
-    return {firstName: firstName, lastName: lastName};
-  })
+    let [firstName, lastName] = name;
+    return {firstName, lastName};
+  });
 }
+
+// function populatePeople(names){
+//   return names.map(function(name){
+//     name = name.split(" ");
+//     console.log(name);
+//     // your code
+//     return {
+//       firstName: name[0],
+//       lastName: name[1]
+//     }
+//   });
+// }
+
+console.log(populatePeople(["Frank D", "Eric J", "Marcus P"]));

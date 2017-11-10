@@ -8,59 +8,51 @@ console.log("YOU must stop this alternate dimension from leaking into your world
 
 const name = ask.question("What is your name: ");
 
-let player = new Player(name, ["Walkie Talkie"]);
-
-function Player(name, inventory) {
-  this.name = name;
-  this.hp = 100;
-  this.inventory = inventory;
-  this.damage = 20;
-  this.callDustin = function() {
-    this.damage *= 2;
-    this.hp *= 0.5;
+class Player {
+  constructor(name, inventory) {
+    this.name = name;
+    this.hp = 1000;
+    this.inventory = inventory;
   }
-};
+}
 
-const boss = {
-  name: "Mind Flayer",
-  hp: 200,
-  damage() {
-    return Math.floor(Math.random() * 50);
-  }
-};
+const player = new Player(name, ["Walkie Talkie"]);
 
 const enemies = [
   {
     name: "Demogorgon",
-    hp: 70,
+    hp: 100,
     damage() {
-      return Math.floor(Math.random() * 30);
+      return Math.floor(Math.random() * 20);
     }
   },
   {
     name: "Demodog",
-    hp: 50,
+    hp: 100,
     damage() {
       return Math.floor(Math.random() * 15);
     }
   },
   {
     name: "Steve Harrington",
-    hp: 1,
+    hp: 100,
     damage() {
-      return Math.floor(Math.random() * 0.5);
+      return Math.floor(Math.random() * 10);
     }
   }
 ];
 
 const walk = () => {
   while(player.hp > 0) {
-    let input = ask.question("Enter a 'w' to walk forward, or 'print' to see your status: ");
+    if(enemies.length === 0) {
+      break;
+    }
+    const input = ask.question("Enter a 'w' to walk forward, or 'print' to see your status: ");
     if(input.toLowerCase() === 'w') {
       if(Math.random() <= 0.33) {
-        fight();
-      } else if (Math.random() <= 0.15) {
-        bossAttack();
+        let enemyIndex = Math.floor(Math.random() * enemies.length);
+        let enemy = enemies[enemyIndex];
+        fight(enemy);
       } else {
         console.log("You Walk!");
       }
@@ -78,23 +70,30 @@ const run = () => {
   return Math.random() >= 0.5;
 }
 
-const fight = () => {
+const fight = (monster) => {
   const choiceArr = ["Fight", "Run"];
-  let enemy = enemies[Math.floor(Math.random() * enemies.length)];
-  let input = ask.keyInSelect(choiceArr, `Oh no a ${enemy.name} appeared! What's your choice: `);
+  let input = ask.keyInSelect(choiceArr, `Oh no a ${monster.name} appeared! What's your choice: `);
   if(input === 0) {
-    while(enemy.hp > 0) {
-      console.log("You attacked the enemy for: " + attackEnemy(enemy));
-      console.log("Enemy Health: " + enemy.hp);
-      console.log("The enemy attacked you for: " + enemyAttack(enemy));
+    while(monster.hp > 0) {
+      console.log("You attacked the enemy for: " + attackEnemy(monster));
+      console.log("Enemy Health: " + monster.hp);
+      console.log("The enemy attacked you for: " + enemyAttack(monster));
       console.log("Your Health: " +  player.hp);
+      if(monster.hp <= 0) {
+        console.log("That enemy is dead.");
+        enemyDie(monster);
+        enemies.splice(enemies.indexOf(monster), 1);
+      } else if(player.hp <= 0) {
+        die();
+        break;
+      }
     }
   } else if(input === 1) {
     if(run()) {
-      console.log("You Ran");
-      // HOW TO LET THEM ESCAPE
+      console.log("You Ran. Coward");
     } else {
       console.log("You couldn't get away COWARD!");
+      fight(monster);
     }
   } else {
     console.log("There's no breaks on the Stranger train.");
@@ -102,8 +101,9 @@ const fight = () => {
 }
 
 const attackEnemy = (currentEnemy) => {
-  currentEnemy.hp -= player.damage;
-  return player.damage;
+  let playerDmg = Math.floor(Math.random() * 25) + 1;
+  currentEnemy.hp -= playerDmg;
+  return playerDmg;
 }
 
 const enemyAttack = (currentEnemy) => {
@@ -112,16 +112,18 @@ const enemyAttack = (currentEnemy) => {
   return enemyDamage;
 }
 
-const bossAttack = () => {
-  console.log(boss.name);
-}
-
 const die = () => {
-
+  console.log("You failed, and 'The Upside Down' now rules over your world. GAME OVER");
 }
 
-const enemyDie = () => {
-
+const enemyDie = (monster) => {
+  if(monster.name === 'Demogorgon') {
+    console.log("The Demogorgon dropped a 'Proton Pack!' maybe you can defeat the Mind Flayer now?");
+    player.inventory.push("Proton Pack");
+    console.log("'Proton Pack' added to your inventory!");
+  } else if(player.health < 100) {
+    console.log(`You healed for: ${player.hp += 50}`);
+  }
 }
 
 walk();
