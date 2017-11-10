@@ -1,0 +1,1 @@
+document.getElementById("root").innerHTML += "<nav><div class='container clearfix'><h1 class='logo'>NAVBAR</h1><ul class='main-nav'><li>Home</li><li>About</li><li>Portfolio</li><li>Contact</li></ul></div></nav>";

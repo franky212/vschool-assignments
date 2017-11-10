@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  background-color: #eee;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  float: left;
+}
+
+.main-nav {
+  float: right;
+  margin-top: 5px;
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.content {
+  margin-top: 58px;
+}
+
+.img1 {
+  max-width: 100%;
+}
