@@ -35,12 +35,16 @@
     display: block;
     width: 0;
     height: 2px;
+    margin-left: 50%;
     background: #7FA68C;
-    transition: width .3s;
+    -webkit-transition: all .20s ease-out;
+    -o-transition: all .20s ease-out;
+    transition: all .20s ease-out;
 }
 
 .navbar-nav li:hover::after {
     width: 100%;
+    margin-left: 0;
 }
 
 section {
