@@ -10,27 +10,27 @@ class Spots extends Component {
         place: "Meridian, Idaho",
         price: 40,
         timeToGo: "Spring",
-        imgUrl: "img/idaho.jpeg"
+        imgUrl: require("./img/idaho.jpeg")
       },{
         place: "Cancun",
         price: 900,
         timeToGo: "Winter",
-        imgUrl: "img/cancun.jpg"
+        imgUrl: require("./img/cancun.jpg")
       },{
         place: "China",
         price: 1200,
         timeToGo: "Fall",
-        imgUrl: "img/china.jpg"
+        imgUrl: require("./img/china.jpg")
       },{
         place: "Russia",
         price: 1100,
         timeToGo: "Summer",
-        imgUrl: "img/russia.jpg"
+        imgUrl: require("./img/russia.jpg")
       },{
         place: "Lebanon",
         price: 400,
         timeToGo: "Spring",
-        imgUrl: "img/lebanon.jpg"
+        imgUrl: require("./img/lebanon.jpg")
       }
     ];
   }

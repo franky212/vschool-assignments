@@ -1,0 +1,29 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+form input {
+  display: block;
+  margin: 10px auto;
+}
+
+select {
+  display: block;
+  margin: 10px auto;
+}
+
+label {
+  display:block;
+  text-align: center;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: block;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+}
