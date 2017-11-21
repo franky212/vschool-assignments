@@ -22,6 +22,7 @@ export default function Navigation() {
     <Navbar style={styles.navbar} inverse fixedTop>
       <Navbar.Header>
         <img src={logo} alt="Delaguila Design" width="300px" />
+        <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav pullRight>

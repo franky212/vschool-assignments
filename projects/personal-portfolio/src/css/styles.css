@@ -15,6 +15,14 @@ body {
   height: 1000px;
 }
 
+::selection {
+  background-color: orange;
+}
+
+.copy {
+  line-height: 150%;
+}
+
 /***************
 
 NAVIGATION
@@ -47,6 +55,15 @@ NAVIGATION
   transition: width 200ms linear;
 }
 
+.navbar-toggle {
+  border: none;
+  background-color: #fff;
+}
+
+.navbar-toggle > span {
+  background-color: #000;
+}
+
 /***************
 
 BANNER
@@ -63,13 +80,10 @@ BANNER
 }
 
 .banner-text {
-  text-align: center;
   color: #fff;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  transform: translate(0, -50%);
 }
 
 .banner-text h1 {
