@@ -21,12 +21,12 @@ export default function Navigation() {
   return (
     <Navbar style={styles.navbar} inverse fixedTop>
       <Navbar.Header>
-        <img src={logo} alt="Delaguila Design" width="300px" />
+        <a href="../../public/index.html"><img src={logo} alt="Delaguila Design" width="300px" /></a>
         <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav pullRight>
-          <NavItem eventKey={1} href="#">Home</NavItem>
+          <NavItem eventKey={1} href="../../public/index.html">Home</NavItem>
           <NavItem eventKey={2} href="#">About</NavItem>
           <NavItem eventKey={3} href="#">Portfolio</NavItem>
           <NavItem eventKey={4} href="#">Contact</NavItem>

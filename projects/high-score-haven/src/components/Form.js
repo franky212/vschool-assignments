@@ -17,7 +17,7 @@ export default class Form extends Component {
   }
 
   trashTalk() {
-    const trash = ["That's trash dawg get it off the airwaves", "You're trash", "Git Gud", "You're a dumpster fire"];
+    const trash = ["Your score is more dissapointing than Donald Trump's presidency", "You're trash", "Git Gud", "You're a dumpster fire", "Uninstall"];
     return trash[Math.floor(Math.random() * trash.length)];
   }
 
@@ -63,7 +63,9 @@ export default class Form extends Component {
         <input onChange={this.handleInputChange} type="checkbox" name="isChecked" />Trash Talk
         <button onClick={this.handleSubmit}>Submit</button>
 
-        {display}
+        <div>
+          {display}
+        </div>
       </div>
     )
   }

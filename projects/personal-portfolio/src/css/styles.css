@@ -36,18 +36,41 @@ NAVIGATION
 
 ****************/
 
+.navbar img {
+  cursor: pointer;
+}
+
 .navbar-nav {
   margin-top: 10px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
 }
 
-.navbar-nav > li > a:link {
+.navbar-nav > li > a:link,
+.navbar-nav > li > a:visited {
   color: #fff;
+  text-align: center;
+}
+
+.navbar-nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-left: 50%;
+    background: #B8A806;
+    -webkit-transition: all .20s ease-out;
+    -o-transition: all .20s ease-out;
+    transition: all .20s ease-out;
+}
+
+.navbar-nav li:hover::after {
+    width: 100%;
+    margin-left: 0;
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #052F38 !important;
+  background-color: #1f1f1f !important; /* #052F38 */
   padding: 0;
   transition: background-color 200ms linear;
 }
@@ -60,7 +83,6 @@ NAVIGATION
 .navbar-fixed-top.scrolled img {
   width: 200px;
   transition: width 200ms linear;
-  cursor: pointer;
 }
 
 .navbar-toggle {
@@ -123,20 +145,50 @@ CONTENT STYLING
   font-size: 1.5em;
 }
 
+.icon-header::before,
 .icon-header::after {
-  display: block;
+  display: inline-block;
+  content: "";
   height: 4px;
-  background-color: #052F38;
-  content: '';
-  width: 150px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  background-color: #B8A806;
+  width: 30px;
+  margin: 10px;
+  vertical-align: middle;
 }
+
+/***************
+
+COLORED SECTION
+
+****************/
 
 .section {
   padding: 4em 0;
   background-color: whitesmoke;
+}
+
+.section-header {
+  color: #fff;
+  text-align: center;
+}
+
+.opposite {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 90px;
+}
+
+.section-header::before,
+.section-header::after {
+  display: inline-block;
+  content: "";
+  height: 4px;
+  background-color: #B8A806;
+  width: 30px;
+  margin: 10px;
+  vertical-align: middle;
 }
 
 .colored {
@@ -155,9 +207,24 @@ MEDIA QUERIES
 ****************/
 
 @media (max-width: 767px) {
+
+  .navbar-nav li:hover::after {
+      width: 0;
+      margin-left: 0;
+  }
+
+  .navbar-nav li {
+    padding: 15px;
+    font-size: 1.2em;
+  }
+
+  .navbar-fixed-top.scrolled .navbar-nav {
+    margin: inherit;
+  }
+
   .navbar-inverse .navbar-collapse {
     border: none;
-    background-color: #052F38;
+    background-color: #1f1f1f;
   }
 
   .navbar-header img {
