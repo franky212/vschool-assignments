@@ -1,6 +1,6 @@
 import React from "react";
 import {Grid, Row, Col} from "react-bootstrap";
-import WorkCard from "./Work";
+import Portfolio from "./Work";
 
 export default function Body() {
   return (
@@ -28,7 +28,7 @@ export default function Body() {
     </div>
 
     <div className="section colored">
-      <WorkCard />
+      <Portfolio />
     </div>
   </div>
   )

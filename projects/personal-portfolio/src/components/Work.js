@@ -1,7 +1,8 @@
 import React from "react";
 import {Grid, Row, Col} from "react-bootstrap";
+import WorkCard from "./WorkCard";
 
-export default function WorkCard() {
+export default function Portfolio() {
   return (
     <Grid>
       <Row>
@@ -10,11 +11,9 @@ export default function WorkCard() {
         </Col>
       </Row>
       <Row>
-        <Col md={4}>
-          <div className="word-card">
-
-          </div>
-        </Col>
+        <WorkCard backgroundImg={require("../img/work1.jpeg")} heading="Work 1" description="FUCKING WORK BRO"/>
+        <WorkCard heading="Work 2" description="WHAT AM I DOING WITH MY LIFE"/>
+        <WorkCard heading="Work 3" description="KILL ME"/>
       </Row>
     </Grid>
   )
