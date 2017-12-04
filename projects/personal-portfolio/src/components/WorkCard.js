@@ -26,11 +26,12 @@ export default class WorkCard extends Component {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
-        color: "#fff"
+        color: "#fff",
+        marginTop: "30px"
       }
     }
     return (
-      <Col sm={12} md={4}>
+      <Col sm={12} md={6}>
         <div>
           <div style={styles.workCard} onClick={this.open} className="work-card">
             <div className="overlay">

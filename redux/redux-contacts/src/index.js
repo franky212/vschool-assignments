@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {Provider} from "react-redux";
-import {createStore} from "redux";
+import {createStore, applyMiddleware} from "redux";
+import thunk from "redux-thunk";
 
 import rootReducer from "./redux";
 import App from "./components/App";
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(thunk));
 store.subscribe(() => {
   console.log(store.getState());
 })

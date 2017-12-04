@@ -30,7 +30,12 @@ function Body() {
   return (
     <div>
       <NavbarContainer />
+
+      {/* RIGHT HERE - ACCESSING LOCAL IMG FILE */}
+
       <img className="banner-img" src={require("./img1.jpg")} alt="Some Dude"/>
+
+      {/* END */}
 
       <section className="about">
         <Grid>

@@ -7,14 +7,27 @@ export default function Portfolio() {
     <Grid>
       <Row>
         <Col xs={12}>
-          <h2 className="section-header">PORTFOLIO</h2>
+          <h2 className="section-header">WEB DESIGN AND DEVELOPMENT PROJECTS</h2>
         </Col>
       </Row>
       <Row>
-        <WorkCard backgroundImg={require("../img/work1.jpeg")} heading="Work 1" description="FUCKING WORK BRO"/>
-        <WorkCard heading="Work 2" description="WHAT AM I DOING WITH MY LIFE"/>
-        <WorkCard heading="Work 3" description="KILL ME"/>
-      </Row>
+        <WorkCard
+          backgroundImg={require("../img/work1.jpg")}
+          heading="Omnifood"
+          description="Work 1 Description"/>
+        <WorkCard
+          backgroundImg={require("../img/work2.jpg")}
+          heading="What's Going On"
+          description="WHAT AM I DOING WITH MY LIFE"/>
+        </Row>
+        <Row>
+        <WorkCard
+          heading="Work 3"
+          description="WHAT IS GOING ON"/>
+          <WorkCard
+            heading="Work 4"
+            description="SLOWLY GETTING THERE"/>
+        </Row>
     </Grid>
   )
 }
