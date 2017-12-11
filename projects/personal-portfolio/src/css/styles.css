@@ -260,6 +260,100 @@ PORTFOLIO
 
 /***************
 
+CONTACT
+
+****************/
+
+.contact {
+  background-color: whitesmoke;
+  padding: 4em 0;
+}
+
+.contact-form {
+  margin: 0 auto;
+}
+
+.contact-form input {
+  font-size: 18px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.contact-button {
+  margin-top: 30px;
+  background-color: #095A6B;
+  text-transform: uppercase;
+  float: right;
+  padding: 15px;
+  border: 0;
+}
+
+.contact-header {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.contact-copy {
+  line-height: 150%;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+/***************
+
+FOOTER
+
+****************/
+
+footer {
+  background-color: #1f1f1f;
+  width: 100%;
+  color: #fff;
+  padding: 1em 0;
+}
+
+footer .fa {
+  color: #fff;
+  font-size: 2em;
+}
+
+footer .nav li {
+  display: inline-block;
+}
+
+footer .nav li .fa-github,
+footer .nav li .fa-facebook,
+footer .nav li .fa-linkedin,
+footer .nav li .fa-twitter {
+  transition: color 200ms ease-in-out;
+}
+
+footer .nav li:hover .fa-github {
+  color: #6e5494;
+}
+
+footer .nav li:hover .fa-facebook {
+  color: #3b5998;
+}
+
+footer .nav li:hover .fa-linkedin {
+  color: #0077B5;
+}
+
+footer .nav li:hover .fa-twitter {
+   color: #1DA1F3;
+}
+
+footer .nav li a:hover,
+footer .nav li a:active,
+footer .nav li a:link {
+  background-color: transparent;
+}
+
+/***************
+
 MEDIA QUERIES
 
 ****************/
