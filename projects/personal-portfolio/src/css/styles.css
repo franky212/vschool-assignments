@@ -279,6 +279,13 @@ CONTACT
   margin-bottom: 30px;
 }
 
+.contact-form textarea {
+  padding: 12.5px;
+  height: 100px;
+  font-size: 18px;
+  resize: none;
+}
+
 .contact-button {
   margin-top: 30px;
   background-color: #095A6B;
@@ -286,6 +293,13 @@ CONTACT
   float: right;
   padding: 15px;
   border: 0;
+  width: 25%;
+  letter-spacing: 3px;
+  transition: background-color .2s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: #FF983C;
 }
 
 .contact-header {

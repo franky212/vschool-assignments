@@ -11,7 +11,7 @@ export default function Footer() {
           </Col>
 
           <Col sm={12} md={4}>
-
+            
           </Col>
 
           <Col sm={12} md={4}>
