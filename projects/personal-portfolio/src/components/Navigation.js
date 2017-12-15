@@ -13,19 +13,15 @@ export default function Navigation() {
     }
   }
   $(document).ready(function () {
-    var winW = parseInt($( window ).width());
     var winH = parseInt($( window ).height());
 
     $(document).scroll(function () {
       var $nav = $(".navbar-fixed-top");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $(".banner").height() - 80);
-      var scrollX = parseInt($(window).scrollLeft());
+      $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
       var scrollY = parseInt($(window).scrollTop());
       $( ".banner" ).each(function(){
         var boxOffset = $(this).offset();
-        var boxX = parseInt(boxOffset.left);
         var boxY = parseInt(boxOffset.top);
-        console.log(boxOffset.top);
 
         // vertically calculated
         var new_opacity = 1+((boxY-scrollY)/winH);
@@ -34,7 +30,6 @@ export default function Navigation() {
         // var new_opacity = 1-((boxX-scrollX)/winW);
         new_opacity = (new_opacity<0)? 0: new_opacity;
         new_opacity = (new_opacity>1)? 1: new_opacity;
-        console.log(new_opacity);
         $(".banner-text").css({'opacity': new_opacity});
         // $(this).text(new_opacity);
       });

@@ -351,20 +351,8 @@ footer .nav li .fa-twitter {
   transition: color 200ms ease-in-out;
 }
 
-footer .nav li:hover .fa-github {
-  color: #6e5494;
-}
-
-footer .nav li:hover .fa-facebook {
-  color: #3b5998;
-}
-
-footer .nav li:hover .fa-linkedin {
-  color: #0077B5;
-}
-
-footer .nav li:hover .fa-twitter {
-   color: #1DA1F3;
+footer .nav li:hover .fa {
+  color: #FF983C;
 }
 
 footer .nav li a:hover,
