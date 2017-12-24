@@ -19,7 +19,7 @@ export default function Navigation() {
       var $nav = $(".navbar-fixed-top");
       $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
       var scrollY = parseInt($(window).scrollTop());
-      $( ".banner" ).each(function(){
+      $( "#videoBlock" ).each(function(){
         var boxOffset = $(this).offset();
         var boxY = parseInt(boxOffset.top);
 
@@ -30,7 +30,7 @@ export default function Navigation() {
         // var new_opacity = 1-((boxX-scrollX)/winW);
         new_opacity = (new_opacity<0)? 0: new_opacity;
         new_opacity = (new_opacity>1)? 1: new_opacity;
-        $(".banner-text").css({'opacity': new_opacity});
+        $("#videoMessage").css({'opacity': new_opacity});
         // $(this).text(new_opacity);
       });
     });

@@ -26,11 +26,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <title>Delaguila Design</title>
   </head>
-  <body>
+  <body onload="myFunction()">
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+    <div style="display: none;" id="root" class="animate-bottom"></div>
+    <img id="loader-logo" src="../src/img/DD-web-logo.png"/>
+    <div id="loader"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -41,5 +43,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loader-logo").style.display = "none";
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("root").style.display = "block";
+    }
+
+    </script>
   </body>
 </html>
