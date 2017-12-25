@@ -138,6 +138,7 @@ NAVIGATION
 .navbar-fixed-top.scrolled img {
   width: 200px;
   transition: width 200ms linear;
+  box-shadow: none;
 }
 
 .navbar-toggle {
