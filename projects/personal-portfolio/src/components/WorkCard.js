@@ -44,7 +44,7 @@ export default class WorkCard extends Component {
                 <Modal.Title>{this.props.heading}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <h4>{this.props.description}</h4>
+                <p>{this.props.description}</p>
               </Modal.Body>
               <Modal.Footer>
                 <Button onClick={this.close}>Close</Button>

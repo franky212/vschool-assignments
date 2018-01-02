@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Grid, Row, Col, Form, FormControl, Button} from "react-bootstrap";
+import {Grid, Row, Col} from "react-bootstrap";
 // const nodemailer = require('nodemailer');
 
 export default class Contact extends Component {
@@ -58,7 +58,7 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <section className="contact">
+      <section className="contact section">
         <Grid>
           <Row>
             <Col xs={12}>
@@ -70,12 +70,8 @@ export default class Contact extends Component {
               <p className="contact-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed neque vitae leo molestie consequat. Mauris dapibus felis nec quam vehicula vulputate. Aliquam blandit mi faucibus justo pretium, ut porta nunc lobortis. Nullam justo purus, porta eu vestibulum vitae, ullamcorper in neque. Nulla condimentum eget sapien vel lobortis. Sed rhoncus varius tempor. Etiam sodales est tempor, tincidunt lacus vel, tincidunt nisi. Aenean fermentum, erat eget bibendum ornare, justo dui interdum justo, vitae efficitur lacus orci non nisi. Fusce eleifend lacus vel dui ullamcorper sagittis. Etiam eget dignissim.</p>
             </Col>
             <Col className="contact-container" sm={12} md={6}>
-              <Form className="contact-form">
-                <FormControl name="name" onChange={this.handleChange.bind(this)} placeholder="Name" />
-                <FormControl name="email" type="email" onChange={this.handleChange.bind(this)} placeholder="Email" />
-                <FormControl name="message" onChange={this.handleChange.bind(this)} componentClass="textarea" placeholder="Message" />
-                <Button className="contact-button" bsStyle="primary">Submit</Button>
-              </Form>
+              <h3><i className="fa fa-envelope contact-fa" aria-hidden="true"></i><a href="mailto:frank.delaguila@delaguiladesign.com">frank.delaguila@delaguiladesign.com</a></h3>
+              <h3><i className="fa fa-phone-square contact-fa" aria-hidden="true"></i><a href="tel:1-435-256-1964">(435) 256-1964</a></h3>
             </Col>
           </Row>
         </Grid>
