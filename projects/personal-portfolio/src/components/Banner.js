@@ -3,7 +3,7 @@ import $ from "jquery";
 
 export default function Banner() {
   return (
-    <div id="banner-height" className="banner">
+    <div id="banner" className="banner">
       <div className="container">
       <div className="banner-text">
           <h1>Web Designer and Developer</h1>

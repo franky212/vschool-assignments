@@ -31,7 +31,7 @@ export default class WorkCard extends Component {
       }
     }
     return (
-      <Col sm={12} md={6}>
+      <Col sm={12} md={this.props.desktopSize}>
         <div>
           <div style={styles.workCard} onClick={this.open} className="work-card">
             <div className="overlay">

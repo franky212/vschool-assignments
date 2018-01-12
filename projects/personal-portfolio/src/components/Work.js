@@ -4,7 +4,7 @@ import WorkCard from "./WorkCard";
 
 export default function Portfolio() {
   return (
-    <Grid>
+    <Grid id="portfolio">
       <Row>
         <Col xs={12}>
           <h2 className="section-header">WEB DESIGN AND DEVELOPMENT PROJECTS</h2>
@@ -14,11 +14,18 @@ export default function Portfolio() {
         <WorkCard
           backgroundImg={require("../img/work1.jpg")}
           heading="Omnifood"
-          description="I wanted to create portfolio work that I could be proud of, so I decided to make a small one page fictional business website. The site is fully responsive, and comes with a mobile menu as well. The premise is a food delivery site that highlights their mobile application, locations, reviews, pricing, and a way to get in contact with them. You can view it here: http://delaguiladesign.com/omnifood/index.html"/>
+          description="I wanted to create portfolio work that I could be proud of, so I decided to make a small one page fictional business website. The site is fully responsive, and comes with a mobile menu as well. The premise is a food delivery site that highlights their mobile application, locations, reviews, pricing, and a way to get in contact with them. You can view it here: http://frankdelaguila-omnifood.surge.sh/"
+          desktopSize={6}/>
         <WorkCard
           backgroundImg={require("../img/work2.jpg")}
           heading="What's Going On"
-          description="I’ve been working on a React based app called What’s Going On in my spare time as project work. The premise is having an interactive way to view events that are near a user as well as business' being able to post events to the map for users to see. You can check it out here whats-going-on.surge.sh"/>
+          description="I’ve been working on a React based app called What’s Going On in my spare time as project work. The premise is having an interactive way to view events that are near a user as well as business' being able to post events to the map for users to see. You can check it out here whats-going-on.surge.sh"
+          desktopSize={6}/>
+          <WorkCard
+            backgroundImg={require("../img/work1.jpg")}
+            heading="GROUP PROJECT"
+            description="GAME PROJECT"
+            desktopSize={12}/>
         </Row>
     </Grid>
   )

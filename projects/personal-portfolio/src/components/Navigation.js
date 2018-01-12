@@ -34,6 +34,19 @@ export default function Navigation() {
         // $(this).text(new_opacity);
       });
     });
+
+    $(document).ready(function(){
+      $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+        }, 900, 'swing');
+	});
+});
   });
 
   return (
@@ -45,10 +58,10 @@ export default function Navigation() {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={1} href="../../public/index.html">Home</NavItem>
-            <NavItem eventKey={2} href="#">About</NavItem>
-            <NavItem eventKey={3} href="#">Portfolio</NavItem>
-            <NavItem eventKey={4} href="#">Contact</NavItem>
+            <NavItem eventKey={1} href="#banner">Home</NavItem>
+            <NavItem eventKey={2} href="#about">About</NavItem>
+            <NavItem eventKey={3} href="#portfolio">Portfolio</NavItem>
+            <NavItem eventKey={4} href="#contact">Contact</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

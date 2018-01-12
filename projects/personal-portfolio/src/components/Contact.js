@@ -58,7 +58,7 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <section className="contact section">
+      <section className="contact section" id="contact">
         <Grid>
           <Row>
             <Col xs={12}>

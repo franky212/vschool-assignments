@@ -5,7 +5,7 @@ import Portfolio from "./Work";
 export default function Body() {
   return (
     <div>
-      <div className="section">
+      <div className="section" id="about">
         <Grid>
           <Row className="show-grid">
             <Col md={4} sm={12}>
