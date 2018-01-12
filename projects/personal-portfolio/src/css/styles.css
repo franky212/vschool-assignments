@@ -245,7 +245,7 @@ CONTENT STYLING
   position: relative;
 }
 
-.section::before {
+/*.section::before {
   position: absolute;
   width: 100%;
   height: 90px;
@@ -256,7 +256,7 @@ CONTENT STYLING
   overflow: hidden;
   top: 0;
   content: '';
-}
+}*/
 
 .icon-header {
   text-align: center;
@@ -284,7 +284,7 @@ COLORED SECTION
 ****************/
 
 .section {
-  padding: 2em 0;
+  padding: 4em 0;
   background-color: whitesmoke;
 }
 
@@ -294,17 +294,11 @@ COLORED SECTION
   margin-bottom: 30px;
 }
 
-.section-grid {
-  margin-top: 90px;
-  margin-bottom: 90px;
-}
-
 .opposite {
   color: #000;
   text-align: center;
   font-weight: 700;
   letter-spacing: 3px;
-  margin-bottom: 90px;
 }
 
 .section-header::before,

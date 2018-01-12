@@ -4,7 +4,7 @@ import WorkCard from "./WorkCard";
 
 export default function Portfolio() {
   return (
-    <Grid className="section-grid">
+    <Grid>
       <Row>
         <Col xs={12}>
           <h2 className="section-header">WEB DESIGN AND DEVELOPMENT PROJECTS</h2>
