@@ -284,7 +284,7 @@ COLORED SECTION
 ****************/
 
 .section {
-  padding: 4em 0;
+  padding: 2em 0;
   background-color: whitesmoke;
 }
 
@@ -319,7 +319,7 @@ COLORED SECTION
 }
 
 .colored {
-  background-image: linear-gradient(to right, rgba(54,209,220, 0.5), rgba(91,134,229, 0.5)), url("../img/section-bg.jpeg");
+  background-image: linear-gradient(to right, rgba(54,209,220, 0.5), rgba(91,134,229, 0.5)), url("../img/section-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -396,35 +396,6 @@ CONTACT
   padding: 4em 0;
 }
 
-.contact-form {
-  margin: 0 auto;
-}
-
-.contact-form input {
-  font-size: 18px;
-  padding: 25px;
-  margin-bottom: 30px;
-}
-
-.contact-form textarea {
-  padding: 12.5px;
-  height: 100px;
-  font-size: 18px;
-  resize: none;
-}
-
-.contact-button {
-  margin-top: 30px;
-  background-color: #095A6B;
-  text-transform: uppercase;
-  float: right;
-  padding: 15px;
-  border: 0;
-  width: 25%;
-  letter-spacing: 3px;
-  transition: background-color .2s ease-in-out;
-}
-
 .contact-button:hover {
   background-color: #FF983C;
 }
@@ -437,8 +408,7 @@ CONTACT
 
 .contact-copy {
   line-height: 150%;
-  font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: justify;
 }
 
@@ -479,6 +449,10 @@ footer .nav li a:hover,
 footer .nav li a:active,
 footer .nav li a:link {
   background-color: transparent;
+}
+
+.footer-copyright {
+  padding-top: 15px !important;
 }
 
 /***************

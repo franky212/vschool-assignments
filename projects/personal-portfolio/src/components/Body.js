@@ -11,17 +11,17 @@ export default function Body() {
             <Col md={4} sm={12}>
               <i className="fa fa-paint-brush" aria-hidden="true"></i>
               <h3 className="icon-header">Design</h3>
-              <p className="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a volutpat augue. Pellentesque dignissim mattis magna. Praesent elementum, dui vitae scelerisque auctor, sapien magna congue arcu, in feugiat eros eros id diam. Integer tellus nibh, lacinia consectetur venenatis ac, aliquet sed.</p>
+              <p className="copy">I'll design your website with your company in mind! I want to make sure you get the perfect product to show the world!</p>
             </Col>
             <Col md={4} sm={12}>
               <i className="fa fa-code" aria-hidden="true"></i>
               <h3 className="icon-header">Code</h3>
-              <p className="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a volutpat augue. Pellentesque dignissim mattis magna. Praesent elementum, dui vitae scelerisque auctor, sapien magna congue arcu, in feugiat eros eros id diam. Integer tellus nibh, lacinia consectetur venenatis ac, aliquet sed.</p>
+              <p className="copy">Once the design of your website is done the coding starts! I'll periodically check in with you during the development process, and make sure your project is going exactly how you want it to!</p>
             </Col>
             <Col md={4} sm={12}>
               <i className="fa fa-rocket" aria-hidden="true"></i>
               <h3 className="icon-header">Launch</h3>
-              <p className="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a volutpat augue. Pellentesque dignissim mattis magna. Praesent elementum, dui vitae scelerisque auctor, sapien magna congue arcu, in feugiat eros eros id diam. Integer tellus nibh, lacinia consectetur venenatis ac, aliquet sed.</p>
+              <p className="copy">Once we get to the Launch phase it's time to show the world what you have in store. I'll be there to help, and support you the entire way with any revisions you may want on your brand new website!</p>
             </Col>
           </Row>
       </Grid>

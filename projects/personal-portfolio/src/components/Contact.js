@@ -67,7 +67,7 @@ export default class Contact extends Component {
           </Row>
           <Row>
             <Col sm={12} md={6}>
-              <p className="contact-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed neque vitae leo molestie consequat. Mauris dapibus felis nec quam vehicula vulputate. Aliquam blandit mi faucibus justo pretium, ut porta nunc lobortis. Nullam justo purus, porta eu vestibulum vitae, ullamcorper in neque. Nulla condimentum eget sapien vel lobortis. Sed rhoncus varius tempor. Etiam sodales est tempor, tincidunt lacus vel, tincidunt nisi. Aenean fermentum, erat eget bibendum ornare, justo dui interdum justo, vitae efficitur lacus orci non nisi. Fusce eleifend lacus vel dui ullamcorper sagittis. Etiam eget dignissim.</p>
+              <h2 className="contact-copy">Contact Me if you want to bring your ideas to life!</h2>
             </Col>
             <Col className="contact-container" sm={12} md={6}>
               <h3><i className="fa fa-envelope contact-fa" aria-hidden="true"></i><a href="mailto:frank.delaguila@delaguiladesign.com">frank.delaguila@delaguiladesign.com</a></h3>

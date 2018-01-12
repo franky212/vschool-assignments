@@ -7,11 +7,11 @@ export default function Footer() {
       <Grid>
         <Row>
           <Col sm={12} md={4}>
-            <small className="footer-copyright">&copy;2017 - Frank Delaguila</small>
+            <p className="footer-copyright">&copy;2017 - Frank Delaguila</p>
           </Col>
 
           <Col sm={12} md={4}>
-            
+
           </Col>
 
           <Col sm={12} md={4}>
