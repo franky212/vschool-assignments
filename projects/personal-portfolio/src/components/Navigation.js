@@ -43,17 +43,17 @@ export default function Navigation() {
         var $target = $(target);
 
         $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
+          'scrollTop': $target.offset().top - 75
         }, 900, 'swing');
-	});
-});
+      });
+    });
   });
 
   return (
     <div>
       <Navbar style={styles.navbar} inverse fixedTop>
         <Navbar.Header>
-          <a href="../../public/index.html"><img src={logo} alt="Delaguila Design" width="300px" /></a>
+          <a href="/"><img src={logo} alt="Delaguila Design" width="300px" /></a>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>

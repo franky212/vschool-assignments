@@ -12,7 +12,6 @@ GENERAL STYLES
 
 body {
   font-family: "Lato", sans-serif;
-  height: 1000px;
   background-color: #1f1f1f;
 }
 
@@ -272,6 +271,12 @@ PORTFOLIO
 
 ****************/
 
+.modal-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 75%;
+}
+
 .work-card {
   position: relative;
   background-color: #fff;
@@ -398,6 +403,21 @@ footer .nav li a:link {
 
 /***************
 
+OMNIFOOD PAGE
+
+****************/
+
+.omnifood-banner {
+  height: 25vh;
+  background-image: url("../img/omnifood-bg.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/***************
+
 MEDIA QUERIES
 
 ****************/
@@ -470,6 +490,10 @@ MEDIA QUERIES
   BANNER
 
   ****************/
+
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobile-bg.jpg");
+  }
 
   .banner-text h1 {
     font-size: 2em;

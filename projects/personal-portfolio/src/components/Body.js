@@ -1,10 +1,13 @@
 import React from "react";
 import {Grid, Row, Col} from "react-bootstrap";
 import Portfolio from "./Work";
+import Banner from "./Banner";
+import Contact from "./Contact";
 
 export default function Body() {
   return (
     <div>
+      <Banner />
       <div className="section" id="about">
         <Grid>
           <Row className="show-grid">
@@ -30,6 +33,7 @@ export default function Body() {
     <div className="section colored">
       <Portfolio />
     </div>
+    <Contact />
   </div>
   )
 }
