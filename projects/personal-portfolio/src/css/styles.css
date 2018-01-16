@@ -485,6 +485,10 @@ MEDIA QUERIES
 
   ****************/
 
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobile-bg.jpg");
+  }
+
   .banner-text h1 {
     font-size: 2em;
     letter-spacing: 0;
@@ -532,12 +536,6 @@ MEDIA QUERIES
 @media (max-width: 513px) {
   .section-header {
     font-size: 1.2em;
-  }
-}
-
-@media (max-width: 480px) {
-  .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobile-bg.jpg");
   }
 }
 
