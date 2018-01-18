@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Grid, Row, Col, Modal, Button} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 export default class Portfolio extends Component {
   constructor(props) {
@@ -48,12 +49,12 @@ export default class Portfolio extends Component {
         <Row>
           <Col sm={12} md={6}>
             <div>
-              <div style={styles.workCard1} onClick={() => this.setState({showModal1: true})} className="work-card">
+              <Link to="/omnifood"><div style={styles.workCard1} onClick={() => this.setState({showModal1: true})} className="work-card">
                 <div className="overlay">
                   <h4 className="box-text">Omnifood</h4>
                 </div>
-              </div>
-              <Modal bsSize="large" show={this.state.showModal1} onHide={() => this.setState({showModal1: false})}>
+              </div></Link>
+              {/* <Modal bsSize="large" show={this.state.showModal1} onHide={() => this.setState({showModal1: false})}>
                 <Modal.Header closeButton>
                   <Modal.Title>Omnifood</Modal.Title>
                 </Modal.Header>
@@ -64,17 +65,17 @@ export default class Portfolio extends Component {
                 <Modal.Footer>
                   <Button onClick={() => this.setState({showModal1: false})}>Close</Button>
                 </Modal.Footer>
-              </Modal>
+              </Modal> */}
             </div>
           </Col>
           <Col sm={12} md={6}>
             <div>
-              <div style={styles.workCard2} onClick={() => this.setState({showModal2: true})} className="work-card">
+              <Link to="whatsgoingon"><div style={styles.workCard2} onClick={() => this.setState({showModal2: true})} className="work-card">
                 <div className="overlay">
                   <h4 className="box-text">What's Going On</h4>
                 </div>
-              </div>
-              <Modal bsSize="large" show={this.state.showModal2} onHide={() => this.setState({showModal2: false})}>
+              </div></Link>
+              {/* <Modal bsSize="large" show={this.state.showModal2} onHide={() => this.setState({showModal2: false})}>
                 <Modal.Header closeButton>
                   <Modal.Title>What's Going On</Modal.Title>
                 </Modal.Header>
@@ -85,17 +86,17 @@ export default class Portfolio extends Component {
                 <Modal.Footer>
                   <Button onClick={() => this.setState({showModal2: false})}>Close</Button>
                 </Modal.Footer>
-              </Modal>
+              </Modal> */}
             </div>
           </Col>
           <Col sm={12} md={12}>
             <div>
-              <div style={styles.workCard3} onClick={() => this.setState({showModal3: true})} className="work-card">
+              <Link to="/cyberpunk"><div style={styles.workCard3} onClick={() => this.setState({showModal3: true})} className="work-card">
                 <div className="overlay">
                   <h4 className="box-text">Full-Stack React-Redux Mini-RPG with user auth</h4>
                 </div>
-              </div>
-              <Modal bsSize="large" show={this.state.showModal3} onHide={() => this.setState({showModal3: false})}>
+              </div></Link>
+              {/* <Modal bsSize="large" show={this.state.showModal3} onHide={() => this.setState({showModal3: false})}>
                 <Modal.Header closeButton>
                   <Modal.Title>Cyberpunk 2047</Modal.Title>
                 </Modal.Header>
@@ -106,7 +107,7 @@ export default class Portfolio extends Component {
                 <Modal.Footer>
                   <Button onClick={() => this.setState({showModal3: false})}>Close</Button>
                 </Modal.Footer>
-              </Modal>
+              </Modal> */}
             </div>
           </Col>
           </Row>

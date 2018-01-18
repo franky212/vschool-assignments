@@ -175,6 +175,37 @@ BANNER
   z-index: 0000;
 }
 
+.example-body {
+  max-width: 960px;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.example-body img {
+  max-width: 100%;
+  display: block;
+}
+
+.example-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  font-size: 1.3em;
+  color: white;
+  padding: 13px;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.example-link:hover {
+  color: #FF983C;
+  text-decoration: none;
+  border: 2px solid #FF983C;
+}
+
 .banner-text {
   color: #fff;
   position: absolute;
@@ -530,6 +561,11 @@ MEDIA QUERIES
 @media (max-width: 572px) {
   .section-header {
     font-size: 1.3em;
+  }
+
+  .example-body {
+    max-width: 100%;
+    padding-top: 30px;
   }
 }
 

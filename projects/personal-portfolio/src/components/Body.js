@@ -1,12 +1,14 @@
 import React from "react";
 import {Grid, Row, Col} from "react-bootstrap";
 import Portfolio from "./Work";
+import Navigation from "./Navigation";
 import Banner from "./Banner";
 import Contact from "./Contact";
 
 export default function Body() {
   return (
     <div>
+      <Navigation />
       <Banner />
       <div className="section" id="about">
         <Grid>

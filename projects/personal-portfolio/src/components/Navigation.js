@@ -57,7 +57,7 @@ export default function Navigation() {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullRight>
+          <Nav id="example-nav" pullRight>
             <NavItem eventKey={1} href="#banner">Home</NavItem>
             <NavItem eventKey={2} href="#about">About</NavItem>
             <NavItem eventKey={3} href="#portfolio">Portfolio</NavItem>

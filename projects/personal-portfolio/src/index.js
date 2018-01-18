@@ -2,9 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./css/styles.css";
 import App from "./App";
+import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
-  <App />,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById("root"));
 
 if(module.hot) {
