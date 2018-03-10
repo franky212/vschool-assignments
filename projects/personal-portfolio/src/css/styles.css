@@ -12,7 +12,6 @@ GENERAL STYLES
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #1f1f1f;
 }
 
 .copy {
@@ -244,6 +243,29 @@ PORTFOLIO
 
 ****************/
 
+.project-header:link,
+.project-header:visited {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
+
+.project-header:after {
+  display: block;
+  width: 0;
+  height: 5px;
+  content: "";
+  background-color: #FF983C;
+  margin-right: 50%;
+  transition: all .2s ease-in-out;
+}
+
+.project-header:hover::after {
+  width: 50%;
+  margin-right: 0;
+}
+
 .modal-img {
   display: block;
   margin: 0 auto;
@@ -322,7 +344,7 @@ CONTACT
 
 .contact-copy {
   line-height: 150%;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -448,10 +470,6 @@ MEDIA QUERIES
   BANNER
 
   ****************/
-
-  .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobile-bg.jpg");
-  }
 
   .banner-text h1 {
     font-size: 2em;

@@ -5,11 +5,10 @@ import {Grid, Row, Col} from "react-bootstrap";
 export default function Contact() {
   const styles = {
     section: {
-      padding: '4em 0',
-      backgroundColor: 'whitesmoke'
+      padding: '6em 0'
     }
   }
-  return (<section style={styles.section}>
+  return (<section style={styles.section} id="contact">
     <Grid>
       <Row>
         <Col xs={12}>
@@ -18,7 +17,7 @@ export default function Contact() {
       </Row>
       <Row>
         <Col sm={12} md={6}>
-          <h2 className="contact-copy">Contact Me if you want to bring your ideas to life!</h2>
+          <h2 className="contact-copy">Feel free to contact me.</h2>
         </Col>
         <Col className="contact-container" sm={12} md={6}>
           <h3>

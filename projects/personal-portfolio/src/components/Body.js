@@ -9,15 +9,17 @@ export default function Body() {
   const styles = {
     section: {
       position: 'relative',
-      padding: '4em 0',
-      backgroundColor: 'whitesmoke'
+      padding: '6em 0'
     },
     colored: {
       backgroundImage: `linear-gradient(to right, rgba(54,209,220, 0.5), rgba(91,134,229, 0.5)), url(${require("../img/section-bg.jpg")})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundAttachment: 'fixed',
-      padding: '4em 0'
+      padding: '6em 0'
+    },
+    img: {
+      width: '75%'
     }
   }
   return (
@@ -27,20 +29,11 @@ export default function Body() {
       <div style={styles.section} id="about">
         <Grid>
           <Row className="show-grid">
-            <Col md={4} sm={12}>
-              <i className="fa fa-paint-brush" aria-hidden="true"></i>
-              <h3 className="icon-header">Design</h3>
-              <p className="copy">I'll design your website with your company in mind! I want to make sure you get the perfect product to show the world!</p>
+            <Col md={6}>
+              <p className="lead">Hi! My name is Frank Delaguila. I'm a Web Developer with Full-Stack JavaScript experience, as well as Graphic Design experience. I'm a firm believer that tech and design are the greatest way to simplify communications, elevate experiences, and engage as well as inspire people around the world. Great technology and design come from collaboration, and I'm excited to start a dialouge with you!</p>
             </Col>
-            <Col md={4} sm={12}>
-              <i className="fa fa-code" aria-hidden="true"></i>
-              <h3 className="icon-header">Code</h3>
-              <p className="copy">Once the design of your website is done the coding starts! I'll periodically check in with you during the development process, and make sure your project is going exactly how you want it to!</p>
-            </Col>
-            <Col md={4} sm={12}>
-              <i className="fa fa-rocket" aria-hidden="true"></i>
-              <h3 className="icon-header">Launch</h3>
-              <p className="copy">Once we get to the Launch phase it's time to show the world what you have in store. I'll be there to help, and support you the entire way with any revisions you may want on your brand new website!</p>
+            <Col md={6}>
+              <img style={styles.img} src={require("../img/frank.jpg")} alt="Frank Delaguila Headshot"/>
             </Col>
           </Row>
       </Grid>
