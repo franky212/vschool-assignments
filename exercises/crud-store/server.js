@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
-const port = process.env.PORT || 8000;cleqra
+const port = process.env.PORT || 8000;
 
 app.use(bodyParser.json());
 app.use(morgan("dev"));

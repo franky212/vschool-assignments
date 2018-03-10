@@ -6,11 +6,25 @@ import Banner from "./Banner";
 import Contact from "./Contact";
 
 export default function Body() {
+  const styles = {
+    section: {
+      position: 'relative',
+      padding: '4em 0',
+      backgroundColor: 'whitesmoke'
+    },
+    colored: {
+      backgroundImage: `linear-gradient(to right, rgba(54,209,220, 0.5), rgba(91,134,229, 0.5)), url(${require("../img/section-bg.jpg")})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundAttachment: 'fixed',
+      padding: '4em 0'
+    }
+  }
   return (
     <div>
       <Navigation />
       <Banner />
-      <div className="section" id="about">
+      <div style={styles.section} id="about">
         <Grid>
           <Row className="show-grid">
             <Col md={4} sm={12}>
@@ -32,7 +46,7 @@ export default function Body() {
       </Grid>
     </div>
 
-    <div className="section colored">
+    <div style={styles.colored}>
       <Portfolio />
     </div>
     <Contact />

@@ -1,72 +1,41 @@
 import React, {Component} from "react";
 import {Grid, Row, Col} from "react-bootstrap";
-import {Link} from "react-router-dom";
 
 export default class Portfolio extends Component {
   render() {
     const styles = {
-      workCard1: {
-        backgroundImage: `url(${require("../img/work1.jpg")})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
-        color: "#fff",
-        marginTop: "30px"
-      },
-      workCard2: {
-        backgroundImage: `url(${require("../img/work2.jpg")})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
-        color: "#fff",
-        marginTop: "30px"
-      },
-      workCard3: {
-        backgroundImage: `url(${require("../img/cyberpunk2047.png")})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
-        color: "#fff",
-        marginTop: "30px"
+      img: {
+        maxWidth: '100%'
       }
     }
-    return (
-      <Grid id="portfolio">
-        <Row>
-          <Col xs={12}>
-            <h2 className="section-header">WEB DESIGN AND DEVELOPMENT PROJECTS</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={12} md={6}>
-            <div>
-              <Link to="/omnifood"><div style={styles.workCard1} onClick={() => this.setState({showModal1: true})} className="work-card">
-                <div className="overlay">
-                  <h4 className="box-text">Omnifood</h4>
-                </div>
-              </div></Link>
-            </div>
-          </Col>
-          <Col sm={12} md={6}>
-            <div>
-              <Link to="whatsgoingon"><div style={styles.workCard2} onClick={() => this.setState({showModal2: true})} className="work-card">
-                <div className="overlay">
-                  <h4 className="box-text">What's Going On</h4>
-                </div>
-              </div></Link>
-            </div>
-          </Col>
-          <Col sm={12} md={12}>
-            <div>
-              <Link to="/cyberpunk"><div style={styles.workCard3} onClick={() => this.setState({showModal3: true})} className="work-card">
-                <div className="overlay">
-                  <h4 className="box-text">Full-Stack React-Redux Mini-RPG with user auth</h4>
-                </div>
-              </div></Link>
-            </div>
-          </Col>
-          </Row>
-      </Grid>
-    )
+    return (<Grid id="portfolio">
+      <Row>
+        <Col xs={12}>
+          <h2 className="section-header">WEB DESIGN AND DEVELOPMENT PROJECTS</h2>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={6}>
+          <a rel="noreferrer noopener" target="_blank" href="http://whats-going-on.surge.sh/">
+            <h2>What's Going On?</h2>
+          </a>
+          <p className="lead">This React / Redux project incorporates multiple APIs (TicketMaster, Google Maps, and Googles Geocoding API) to allow a user to search for an artist, select an event with that artist, and place a clickable Google Map pin so they are able to purchase a ticket from Ticket Master.</p>
+        </Col>
+        <Col md={6}>
+          <img style={styles.img} src={require("../img/work2.jpg")} alt="What's Going On example" />
+        </Col>
+      </Row>
+      <Row>
+        <Col md={6}>
+          <a href="https://cyberpunk2047.herokuapp.com/">
+            <h2>CyberPunk 2047</h2>
+          </a>
+          <p className="lead">Upon login, users are redirected to the character screen where they are able to view stats such as HP & Currency, as well as the current items in their inventory. In the shop, users are able to purchase items with currency for use in battle. In the battle screen, users are able to fight enemies for currency and item drops. There are two conditional renders, for the Game Over and Win screens.</p>
+        </Col>
+        <Col md={6}>
+          <img style={styles.img} src={require("../img/cyberpunk2047.png")} alt="Login Screen for Cyberpunk 2047" />
+        </Col>
+      </Row>
+    </Grid>)
   }
 }

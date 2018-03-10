@@ -39,52 +39,6 @@ body {
   display: none;
 }
 
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #FF983C;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { opacity:0 }
-  to { opacity:1 }
-}
-
-@keyframes animatebottom {
-  from{ opacity:0 }
-  to{ opacity:1 }
-}
-
 /***************
 
 NAVIGATION
@@ -235,10 +189,6 @@ CONTENT STYLING
 
 ****************/
 
-.section {
-  position: relative;
-}
-
 .icon-header {
   text-align: center;
   text-transform: uppercase;
@@ -264,11 +214,6 @@ COLORED SECTION
 
 ****************/
 
-.section {
-  padding: 4em 0;
-  background-color: whitesmoke;
-}
-
 .section-header {
   color: #fff;
   text-align: center;
@@ -291,13 +236,6 @@ COLORED SECTION
   width: 30px;
   margin: 10px;
   vertical-align: middle;
-}
-
-.colored {
-  background-image: linear-gradient(to right, rgba(54,209,220, 0.5), rgba(91,134,229, 0.5)), url("../img/section-bg.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 /***************
@@ -370,11 +308,6 @@ CONTACT
   text-align: left;
   margin: 0 10px 0 0;
   display: inline-block;
-}
-
-.contact {
-  background-color: whitesmoke;
-  padding: 4em 0;
 }
 
 .contact-button:hover {
