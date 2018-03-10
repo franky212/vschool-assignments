@@ -20,6 +20,11 @@ export default function Body() {
     },
     img: {
       width: '75%'
+    },
+    sectionHeader: {
+      color: '#000',
+      textTransform: 'uppercase',
+      fontWeight: '700'
     }
   }
   return (
@@ -28,9 +33,14 @@ export default function Body() {
       <Banner />
       <div style={styles.section} id="about">
         <Grid>
+          <Row>
+            <Col md={12}>
+              <h3 style={styles.sectionHeader} className="section-header">About Me</h3>
+            </Col>
+          </Row>
           <Row className="show-grid">
             <Col md={6}>
-              <p className="lead">Hi! My name is Frank Delaguila. I'm a Web Developer with Full-Stack JavaScript experience, as well as Graphic Design experience. I'm a firm believer that tech and design are the greatest way to simplify communications, elevate experiences, and engage as well as inspire people around the world. Great technology and design come from collaboration, and I'm excited to start a dialouge with you!</p>
+              <p className="lead">Hi! My name is Frank Delaguila. I'm a Web Developer with Full-Stack JavaScript experience, as well as Graphic Design experience. I'm a firm believer that tech and design are the greatest way to simplify communications, elevate experiences, as well as engage and inspire people around the world. Great technology and design come from collaboration, and I'm excited to start a dialogue with you!</p>
             </Col>
             <Col md={6}>
               <img style={styles.img} src={require("../img/frank.jpg")} alt="Frank Delaguila Headshot"/>

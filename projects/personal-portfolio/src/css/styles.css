@@ -22,7 +22,7 @@ body {
   padding: 10px;
 }
 
-.fa {
+.fab {
   font-size: 6em;
   display: block;
   text-align: center;
@@ -366,7 +366,8 @@ footer {
   padding: 1em 0;
 }
 
-footer .fa {
+footer .nav li a:link,
+footer .nav li a:visited {
   color: #fff;
   font-size: 2em;
 }
@@ -375,14 +376,11 @@ footer .nav li {
   display: inline-block;
 }
 
-footer .nav li .fa-github,
-footer .nav li .fa-facebook,
-footer .nav li .fa-linkedin,
-footer .nav li .fa-twitter {
+footer .nav li a {
   transition: color 200ms ease-in-out;
 }
 
-footer .nav li:hover .fa {
+footer .nav li a:hover {
   color: #FF983C;
 }
 
