@@ -22,7 +22,7 @@ export default function Contact() {
         <Col className="contact-container" sm={12} md={6}>
           <h3>
             <i className="fa fa-envelope contact-fa" aria-hidden="true"></i>
-            <a href="mailto:frank.delaguila@delaguiladesign.com">frank.delaguila@delaguiladesign.com</a>
+            <a href="mailto:frank.delaguila@gmail.com">frank.delaguila@gmail.com</a>
           </h3>
           <h3>
             <i className="fa fa-phone-square contact-fa" aria-hidden="true"></i>

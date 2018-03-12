@@ -36,7 +36,7 @@ export default class Portfolio extends Component {
           <a rel="noreferrer noopener" target="_blank" className="project-header" href="https://cyberpunk2047.herokuapp.com/">
             <h2>CyberPunk 2047 &raquo;</h2>
           </a>
-          <p style={styles.p} className="lead">Upon login, users are redirected to the character screen where they are able to view stats such as HP & Currency, as well as the current items in their inventory. In the shop, users are able to purchase items with currency for use in battle. In the battle screen, users are able to fight enemies for currency and item drops. There are two conditional renders, for the Game Over and Win screens.</p>
+          <p style={styles.p} className="lead">This is a Full-Stack JavaScript application using React / Redux, MongoDB, and Express. Upon login, users are redirected to the character screen where they are able to view stats such as HP & Currency, as well as the current items in their inventory. In the shop, users are able to purchase items with currency for use in battle. In the battle screen, users are able to fight enemies for currency and item drops. There are two conditional renders, for the Game Over and Win screens.</p>
         </Col>
         <Col md={6}>
           <img style={styles.img} src={require("../img/cyberpunk2047.png")} alt="Login Screen for Cyberpunk 2047" />
