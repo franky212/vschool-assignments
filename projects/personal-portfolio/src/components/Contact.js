@@ -17,7 +17,7 @@ export default function Contact() {
       </Row>
       <Row>
         <Col sm={12} md={6}>
-          <h2 className="contact-copy">Here is my resume in PDF format(of course).<br /> Also feel free to contact me!</h2>
+          <h2 className="contact-copy">Here is my resume in PDF format.<br /> Also feel free to contact me!</h2>
         </Col>
         <Col className="contact-container" sm={12} md={6}>
           <h3>
